@@ -1,0 +1,19 @@
+/* ------ GLOBAL ------ */
+*{
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body{
+    background-color: hsl(273, 75%, 66%);
+    min-height: 100vh;
+}
+
+/* ------ FOOTER ------ */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
