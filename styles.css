@@ -1,11 +1,43 @@
 /* ------ GLOBAL ------ */
 *{
     font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.hide{
+  display:none;
 }
 
 body{
+    width: 100%;
+    height: 100%;
     background-color: hsl(273, 75%, 66%);
+    display: flex;
+    align-items: center;
     min-height: 100vh;
+}
+
+.container{
+  height: 500px;
+  width: 880px;
+}
+
+
+
+
+/* ------ FAQ CONTAINER ------ */
+#faqContainer *{
+  margin: 0;
+}
+#faqContainer h2{
+  background-color: antiquewhite;
+  cursor: pointer;
+}
+
+#faqContainer p{
+  background-color: white;
 }
 
 /* ------ FOOTER ------ */
