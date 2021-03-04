@@ -3,8 +3,10 @@ const cardHeaders = document.querySelectorAll(".cardHeader");
 /* looping over h2 and removing class boldFont */
 function removeClass() {
     for (let cardHeader of cardHeaders) {
+        cardHeader.style.pointerEvents = "auto";
         const h2Header = cardHeader.firstElementChild;
         h2Header.classList.remove("boldFont");
+
     }
 }
 
@@ -12,6 +14,7 @@ function removeClass() {
 for (let cardHeader of cardHeaders) {
     cardHeader.addEventListener("click", function () {
         removeClass();
+        cardHeader.style.pointerEvents = "none";
         const h2Header = cardHeader.firstElementChild;
         if (!cardHeader.classList.contains("collapse")) {
             h2Header.classList.add("boldFont");
