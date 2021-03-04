@@ -21,6 +21,9 @@ body{
   width: 880px;
 }
 
+.boldFont{
+  font-weight: 700 !important;
+}
 
 /* ------ FAQ CONTAINER ------ */
 #faqContainer *{
@@ -36,9 +39,8 @@ body{
 }
 
 #faqContainer h2{
-  align-items: stretch;
-  font-size:1.5rem;
-  
+  font-weight: 400;
+  font-size:1.2rem;
   margin: 1rem 0;
 }
 
