@@ -15,8 +15,8 @@
 </head>
 
 <body>
-  <div class="container d-flex text-center justify-content-center" style="background-color:green">
-    <div class="row bg-info align-items-center">
+  <div class="container d-flex justify-content-center">
+    <div class="row align-items-center">
       <div class="col-6">
         <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius repudiandae corrupti a optio dolorem,
           officiis sequi sint, repellendus eligendi illum, molestiae tempora earum aliquam autem recusandae quo
@@ -30,16 +30,57 @@
       </div>
       <div id="faqContainer" class="col-6">
         <h1>FAQ</h1>
-        <div>
-          <h2>Question 1</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis fugit quod, expedita modi
-            suscipit vitae
-            accusamus? Iusto illum, adipisci ab eveniet vero ducimus doloribus dignissimos, in a assumenda sunt
-            quisquam.</p>
-        </div>
-        <div>
-          <h2>Question 2</h2>
-          <p>adsads dasd asd</p>
+        <div class="accordion" id="accordion">
+          <div class="cardItem">
+            <div class="cardHeader" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+              aria-controls="collapseOne">
+              <h2>
+                How many team members can I invite?</h2>
+            </div>
+            <p id="collapseOne" class="collapse" data-parent="#accordion">Lorem ipsum
+              You can invite up to 2 additional users on the Free plan. There is no limit on
+              team members for the Premium plan.</p>
+          </div>
+
+          <div class="cardItem">
+            <div class="cardHeader" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+              aria-controls="collapseTwo">
+              <h2>
+                What is the maximum file upload size?</h2>
+            </div>
+            <p id="collapseTwo" class="collapse" data-parent="#accordion">No more than 2GB. All files in your account
+              must fit your allotted storage space.</p>
+          </div>
+
+          <div class="cardItem">
+            <div class="cardHeader" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true"
+              aria-controls="collapseThree">
+              <h2> How do I reset my password?</h2>
+            </div>
+            <p id="collapseThree" class="collapse" data-parent="#accordion">Click “Forgot password” from the login page
+              or “Change password” from your profile page.
+              A reset link will be emailed to you.</p>
+          </div>
+
+          <div class="cardItem">
+            <div class="cardHeader" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true"
+              aria-controls="collapseFour">
+              <h2>Can I cancel my subscription?</h2>
+            </div>
+            <p id="collapseFour" class="collapse" data-parent="#accordion">Yes! Send us a message and we’ll process your
+              request no questions asked.</p>
+          </div>
+
+          <div class="cardItem" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true"
+            aria-controls="collapseFive">
+            <div class="cardHeader">
+              <h2>
+                Do you provide additional support?</h2>
+            </div>
+            <p id="collapseFive" class="collapse" data-parent="#accordion">Chat and email support is available 24/7.
+              Phone lines are open during normal business hours.</p>
+          </div>
+
         </div>
       </div>
     </div>
@@ -47,8 +88,6 @@
 
 
   </div>
-  <!-- MY SCRIPT -->
-  <script src="app.js"></script>
   <!-- BOOTSTRAP JS SCRIPT -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
