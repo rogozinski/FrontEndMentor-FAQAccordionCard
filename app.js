@@ -14,7 +14,7 @@ for (let cardHeader of cardHeaders) {
         removeClass();
         const h2Header = cardHeader.firstElementChild;
         if (!cardHeader.classList.contains("collapse")) {
-            h2Header.classList.toggle("boldFont");
+            h2Header.classList.add("boldFont");
         }
 
     });
