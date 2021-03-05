@@ -2,6 +2,8 @@
 *{
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 12px;
+    font-weight: 400;
+    color: hsl(238, 29%, 16%);
     padding: 0;
     margin: 0 auto;
 }
@@ -16,23 +18,36 @@ body{
 }
 
 .container{
+  padding: 0;
   background-color: white;
-  height: 500px;
-  width: 880px;
 }
 
-.boldFont{
+.active{
   font-weight: 700 !important;
+}
+
+/* ------ LEFT CONTAINER ------ */
+#leftContainer{
+overflow: hidden;
+}
+#womanOnline{
+  transform: translateX(-15%);
 }
 
 /* ------ FAQ CONTAINER ------ */
 #faqContainer *{
   margin: 0;
 }
+#faqContainer h1{
+  text-align: center;
+  font-weight: 700;
+}
+
+
 
 .cardItem{
   border: 0 solid rgba(0,0,0,.125);
-  border-bottom: 1px solid rgba(0,0,0,.125);
+  border-bottom: 1px solid hsl(240, 5%, 91%);
 }
 .cardHeader{
   cursor: pointer;
@@ -44,9 +59,11 @@ body{
   margin: 1rem 0;
 }
 
-#faqContainer p{
-  background-color: white;
+#faqContainer h2:hover{
+  color: hsl(14, 88%, 65%);
 }
+
+
 
 /* ------ FOOTER ------ */
 .attribution {
