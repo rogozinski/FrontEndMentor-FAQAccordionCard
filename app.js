@@ -1,43 +1,27 @@
-<<<<<<< HEAD
-// const allHeaders = document.querySelectorAll(".cardHeader");
-// /* looping over h2 and removing class active */
-// function removeClass() {
-//     for (let cardHeader of allHeaders) {
-//         const h2Header = cardHeader.firstElementChild;
-//         h2Header.classList.remove("active");
-//     }
-// }
+const allHeaders = document.querySelectorAll(".cardHeader");
 
-// for (let cardHeader of allHeaders) {
-//     cardHeader.addEventListener("click", function () {
-//         const h2Header = cardHeader.firstElementChild;
-//         removeClass();
-//         h2Header.classList.toggle("active");
-//     });
-// }
-=======
-const cardHeaders = document.querySelectorAll(".cardHeader");
-
-/* looping over h2 and removing class boldFont */
-function removeClass() {
-    for (let cardHeader of cardHeaders) {
-        cardHeader.style.pointerEvents = "auto";
-        const h2Header = cardHeader.firstElementChild;
-        h2Header.classList.remove("boldFont");
-
-    }
-}
-
-/* collapsed elements have class collapse. if clicked element is without that class we change font weight */
-for (let cardHeader of cardHeaders) {
+for (let cardHeader of allHeaders) {
     cardHeader.addEventListener("click", function () {
-        removeClass();
-        cardHeader.style.pointerEvents = "none";
-        const h2Header = cardHeader.firstElementChild;
-        if (!cardHeader.classList.contains("collapse")) {
-            h2Header.classList.add("boldFont");
-        }
-
+        toggleFunction(this);
     });
 }
->>>>>>> parent of b0ff0b3 (project update)
+
+function toggleFunction(x) {
+    // Remove all active classes
+    for (let cardHeader of allHeaders) {
+        var h2Header = cardHeader.firstElementChild;
+        h2Header.classList.remove("active");
+    }
+
+    // Get parent of clicked element and get element with class ".collapse" in it. 
+    // Check if this element have "show" class.
+    var y = x.parentElement.querySelector('.collapse').classList.contains('show');
+
+    // Add or Remove "active" class on clicked child "h2" element
+    var h2Header = x.firstElementChild;
+    if (y) {
+        h2Header.classList.remove("active");
+    } else {
+        h2Header.classList.add("active");
+    }
+}
