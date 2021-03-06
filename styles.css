@@ -19,7 +19,7 @@ body {
   padding: 5rem;
   background-color: white;
   border-radius: 20px;
-  
+  overflow: hidden;
 }
 
 .active {
@@ -30,13 +30,6 @@ body {
 
 
 /* ------ LEFT CONTAINER ------ */
-#boxContainer {
-  position: absolute;
-  left: 3%;
-  top:45%;
-  z-index: 3;
-}
-
 .leftContainer{ 
   transform: translateX(-3rem); 
   width: 100%;
@@ -115,4 +108,23 @@ body {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 760px){
+.container{
+  overflow: visible;
+}
+
+  #bgPattern{
+    display:none;
+  }
+
+  #illustration{
+position: absolute;
+bottom: -2rem;
+right:0;
+}
+
+
 }
