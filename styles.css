@@ -20,6 +20,7 @@ body {
   background-color: white;
   border-radius: 20px;
   overflow: hidden;
+  box-shadow: 0 2rem 2rem hsl(240, 73%, 65%);
 }
 
 .active {
@@ -99,6 +100,7 @@ body {
 
 #faqContainer p {
   padding-right: 30px;
+  color: hsl(240, 6%, 50%);
 }
 /* ------ FOOTER ------ */
 .attribution {
