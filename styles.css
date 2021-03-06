@@ -19,11 +19,33 @@ body {
   padding: 5rem;
   background-color: white;
   border-radius: 20px;
+  overflow: hidden;
 }
 
 .active {
   font-weight: 700 !important;
   padding-bottom: 1rem;
+}
+
+/* ------ LEFT CONTAINER ------ */
+
+.leftContainer{
+  transform: translateX(-2rem);
+}
+
+#bgPattern {
+  transform:scale(0.75);
+  position: absolute;
+  bottom:-40rem;
+  right:0;
+  z-index: 1;
+}
+
+#illustration {
+  position: absolute;
+  bottom: -15rem;
+  right: 10rem;
+  z-index: 2;
 }
 
 /* ------ FAQ CONTAINER ------ */
